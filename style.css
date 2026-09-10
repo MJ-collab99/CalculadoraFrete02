@@ -16,21 +16,11 @@ body {
 }
 
 .cabecalho {
-    display: flex;
     align-items: center;
     gap: 18px;
     margin-bottom: 25px;
-}
-
-.icone {
-    display: grid;
-    width: 62px;
-    height: 62px;
-    place-items: center;
-    border-radius: 16px;
-    font-size: 32px;
-    background: #4317aa;
-    box-shadow: 0 8px 18px #1769aa44;
+    display: block;
+    text-align: center;
 }
 
 h1 {
@@ -42,6 +32,7 @@ h1 {
 .cabecalho p {
     margin: 6px 0 0;
     color: #60758a;
+    margin-top: 8px;
 }
 
 .card {
