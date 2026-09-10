@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #243447;
+    background: linear-gradient(135deg, #f0e8ff, #faf8ff);
+}
+
+.container {
+    width: min(950px, 92%);
+    margin: 35px auto;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.icone {
+    display: grid;
+    width: 62px;
+    height: 62px;
+    place-items: center;
+    border-radius: 16px;
+    font-size: 32px;
+    background: #4317aa;
+    box-shadow: 0 8px 18px #1769aa44;
+}
+
+h1 {
+    margin: 0;
+    color: #1f125b;
+    font-size: 30px;
+}
+
+.cabecalho p {
+    margin: 6px 0 0;
+    color: #60758a;
+}
+
+.card {
+    margin-bottom: 20px;
+    padding: 25px;
+    border: 1px solid #dedbf2;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 8px 25px #56498518;
+}
+
+.card h2 {
+    margin: 0 0 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #f0eaf7;
+    color: #4f17aa;
+    font-size: 19px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.campoGrande {
+    grid-column: span 2;
+}
+
+label {
+    color: #4d406b;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 1px solid #d2cbe5;
+    border-radius: 9px;
+    outline: none;
+    padding: 12px;
+    color: #312447;
+    background: #fcfbff;
+    font: inherit;
+    transition: 0.2s;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #4a17aa;
+    background: #fff;
+    box-shadow: 0 0 0 3px #4a17aa22;
+}
+
+.entradaUnidade {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #d2cbe5;
+    border-radius: 9px;
+    background: #fcfbff;
+}
+
+.entradaUnidade input {
+    border: 0;
+    box-shadow: none;
+}
+
+.entradaUnidade span {
+    padding: 0 11px;
+    color: #81719a;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin: 25px 0;
+}
+
+button {
+    border: 0;
+    border-radius: 9px;
+    padding: 14px 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+}
+
+.btnCalcular {
+    background: #4317aa;
+    box-shadow: 0 5px 12px #4317aa44;
+}
+
+.btnLimpar {
+    background: #6e6887;
+}
+
+.resultado {
+    padding: 25px;
+    border-left: 5px solid #7225a5;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 8px 25px #59498518;
+}
+
+.resultado:empty {
+    display: none;
+}
+
+.resultado h2 {
+    margin-top: 0;
+    color: #4f17aa;
+}
+
+.resultado h3 {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #e0dbf2;
+    color: #4f17aa;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #95719a;
+    font-size: 13px;
+}
+
+@media (max-width: 650px) {
+    .container {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .campo-grande {
+        grid-column: span 1;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
